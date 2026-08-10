@@ -985,7 +985,15 @@
     </span>
   </footer>
 
-  <a href="mailto:vobo4-rastede@posteo.de">
+  <a id="mailLink" href="#">E-Mail schreiben</a>
+<script>
+(function () {
+  var u = "vobo4-rastede", d = "posteo.de";
+  var a = document.getElementById("mailLink");
+  a.href = "mailto:" + u + "@" + d;
+  a.textContent = u + "@" + d;
+})();
+</script>
   /* =====================================================================
      GALERIE-BILDER — hier die Dateinamen pflegen.
      Ein Dateiname pro Zeile ODER nebeneinander mit Leerzeichen getrennt.
